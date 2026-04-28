@@ -42,21 +42,6 @@ It ensures a smooth workflow with a **user-friendly GUI** and reliable backend d
 
 ---
 
-## 📂 Project Structure
-
-```id="8u3gxm"
-Airline-Reservation-System/
-│── src/
-│   ├── controllers/
-│   ├── models/
-│   ├── views/
-│
-│── resources/
-│── database/
-│── README.md
-```
-
----
 
 ## ⚙️ Installation & Setup
 
