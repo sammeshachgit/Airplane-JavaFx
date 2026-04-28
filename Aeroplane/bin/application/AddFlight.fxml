@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="905.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AddFlightController">
+   <top>
+      <Pane maxWidth="-Infinity" prefHeight="595.0" prefWidth="894.0" style="-fx-background-image: #Dcdcdc;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="612.0" fitWidth="919.0" layoutX="-20.0" layoutY="-8.0">
+               <image>
+                  <Image url="@newAF.jpg" />
+               </image>
+            </ImageView>
+            <Text fill="#595990" layoutX="350.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Flight" wrappingWidth="194.991455078125">
+               <font>
+                  <Font name="Calibri Bold" size="45.0" />
+               </font>
+            </Text>
+            <TextField fx:id="flightcode" layoutX="200.0" layoutY="120.0" prefHeight="45.0" prefWidth="290.0" promptText="Enter Flight Code" style="-fx-background-radius: 10PX; -fx-background-radius: 10PX;">
+               <opaqueInsets>
+                  <Insets bottom="10.0" />
+               </opaqueInsets>
+            </TextField>
+            <TextField fx:id="flightname" layoutX="200.0" layoutY="175.0" prefHeight="45.0" prefWidth="290.0" promptText="Enter Flight Name" style="-fx-background-radius: 10PX;">
+               <opaqueInsets>
+                  <Insets bottom="10.0" />
+               </opaqueInsets>
+            </TextField>
+            <TextField fx:id="flightsourse" layoutX="200.0" layoutY="230.0" prefHeight="45.0" prefWidth="290.0" promptText="Enter Flight Source" style="-fx-background-radius: 10PX;">
+               <opaqueInsets>
+                  <Insets bottom="10.0" />
+               </opaqueInsets>
+            </TextField>
+            <TextField fx:id="flightdestination" layoutX="200.0" layoutY="285.0" prefHeight="45.0" prefWidth="290.0" promptText="Enter Flight Destination" style="-fx-background-radius: 10PX;">
+               <opaqueInsets>
+                  <Insets bottom="10.0" />
+               </opaqueInsets>
+            </TextField>
+            <TextField fx:id="flightcapacity" layoutX="200.0" layoutY="340.0" prefHeight="45.0" prefWidth="290.0" promptText="Enter Flight Capacity" style="-fx-background-radius: 10PX;">
+               <opaqueInsets>
+                  <Insets bottom="10.0" />
+               </opaqueInsets>
+            </TextField>
+            <DatePicker fx:id="data" layoutX="245.0" layoutY="400.0" prefHeight="32.0" prefWidth="190.0" />
+            <Button fx:id="clear" layoutX="230.0" layoutY="470.0" mnemonicParsing="false" onAction="#clear" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #595990; -fx-background-radius: 20;" text="Clear All" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="17.0" />
+               </font></Button>
+            <Button fx:id="addflight" layoutX="345.0" layoutY="470.0" mnemonicParsing="false" onAction="#add" prefHeight="40.0" prefWidth="120.0" style="-fx-background-color: #595788; -fx-background-radius: 20;" text="Add Flight" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="17.0" />
+               </font></Button>
+            <Button fx:id="close" layoutX="790.0" layoutY="20.0" mnemonicParsing="false" onAction="#closet" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #83527a; -fx-background-radius: 20;" text="Close" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="20.0" />
+               </font></Button>
+            <ImageView fitHeight="108.0" fitWidth="158.0" layoutX="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </top>
+</BorderPane>
